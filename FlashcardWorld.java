@@ -18,6 +18,7 @@ public class FlashcardWorld extends World {
         addObject(new Button1(), 70, 300);
         addObject(new Button2(), 400, 300);
     }
+    
 /*
     public void showNextCard() {
         if (cardIndex < cards.length) {
