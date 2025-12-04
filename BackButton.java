@@ -1,21 +1,22 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
-/**
- * Write a description of class BackButton here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class BackButton extends Actor
 {
-    /**
-     * Act - do whatever the BackButton wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act(){
-    if(Greenfoot.mouseClicked(this)){
-        Greenfoot.setWorld(new FlashcardWorld());
+    private String selectedFileName;
+    public BackButton(String selectedFileName)
+    {
+        this.selectedFileName = selectedFileName;
+        
+        GreenfootImage img = new GreenfootImage("Click Here to Begin Journey", 30, Color.BLACK, new Color(0,0,0,0));
+        setImage(img);
+    }
+
+    public void act()
+    {
+        if(Greenfoot.mouseClicked(this)){
+            Greenfoot.setWorld(new FlashcardWorld(selectedFileName));
+        }
     }
 }
-}
+
 

@@ -11,13 +11,28 @@ public class Button1 extends Actor
     /**
      * Act - do whatever the Button1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
+     * 
+     * 
      */
-    public Button1(){
+    
+    private final FlashcardWorld worldRef;
+    
+    public Button1(FlashcardWorld worldRef){
+        this.worldRef = worldRef;
         GreenfootImage img = new GreenfootImage(100,30); 
-        img.drawString("Familiar", 2, 20);
+        img.drawString("Hard", 2, 20);
         setImage(img);
     }
     public void act(){
+        if(Greenfoot.mouseClicked(this)){
+            Flashcard x = worldRef.getCurrentCard();
+            x.setWrong();
+            //worldRef.updateProgress();
+            worldRef.showNextCard();
+        }
         
+        
+    
     }
+    
 }

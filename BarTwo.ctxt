@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=BarTwo
+comment0.text=\n\ Write\ a\ description\ of\ class\ BarTwo\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=width\ height\ maxValue\ worldRef
+comment1.target=BarTwo(int,\ int,\ int,\ FlashcardWorld)
+comment2.params=width\ height\ maxValue
+comment2.target=BarTwo(int,\ int,\ int)
+comment2.text=\n\ Act\ -\ do\ whatever\ the\ BarTwo\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment3.params=value
+comment3.target=void\ setValue(int)
+comment4.params=
+comment4.target=void\ draw()
+comment5.params=
+comment5.target=void\ act()
+numComments=6

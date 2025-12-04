@@ -1,5 +1,21 @@
 #BlueJ class context
 comment0.target=FlashcardWorld
-comment1.params=
-comment1.target=FlashcardWorld()
-numComments=2
+comment1.params=selectedFileName
+comment1.target=FlashcardWorld(java.lang.String)
+comment2.params=
+comment2.target=void\ updateProgress()
+comment3.params=
+comment3.target=int\ percentageAsked()
+comment4.params=
+comment4.target=int\ getTotalWeight()
+comment5.params=currentCard
+comment5.target=java.lang.Integer\ getNumber(Flashcard)
+comment6.params=index
+comment6.target=void\ showCard(int)
+comment7.params=
+comment7.target=void\ showNextCard()
+comment8.params=filename
+comment8.target=void\ readDataFromCSV(java.lang.String)
+comment9.params=
+comment9.target=Flashcard\ getCurrentCard()
+numComments=10
